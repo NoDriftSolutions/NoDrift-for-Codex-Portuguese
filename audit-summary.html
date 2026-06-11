@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
@@ -37,6 +37,7 @@
       <nav id="site-navigation" class="nav-links" aria-label="Evidencias links">
         <a href="index.html#top">Visao geral</a>
         <a class="active" href="audit-summary.html">Evidencias</a>
+        <a href="technical-info.html">Tecnico</a>
         <a href="customize.html">Personalizar</a>
         <a href="best-practices.html">Boas praticas</a>
         <a href="troubleshooting.html">Solucao de problemas</a>
@@ -50,20 +51,21 @@
         <p class="eyebrow">Resumo local de evidencias</p>
         <h1><span class="title-wordmark"><span class="wordmark-no">No</span><span class="wordmark-drift">Drift</span></span> Resumo completo da auditoria</h1>
         <p class="hero-subtitle">
-          De 27 de maio de 2026 a 3 de junho de 2026, o workspace Codex governado produziu trabalho intenso de projeto,
+          De 27 de maio de 2026 a 10 de junho de 2026, o workspace Codex governado produziu trabalho intenso de projeto,
           produto controlado, auditoria e preparacao de fontes. O registro interno atual mostra
-          0 desvios confirmados, 0 alucinacoes confirmadas, 1 incidente candidato em revisao e cobertura incompleta da
-          auditoria. Contagens locais diretas foram medidas em 4 de junho de 2026; numeros historicos e limitacoes sao rotulados abaixo.
+          0 desvios confirmados, 0 alucinacoes confirmadas, 1 incidente candidato em revisao, 6 grupos de problemas registrados
+          e cobertura incompleta da auditoria. As contagens locais diretas foram atualizadas a partir do instantaneo
+          Codex Analytics de 10 de junho de 2026; numeros historicos e limitacoes sao rotulados abaixo.
         </p>
       </section>
 
       <section class="section-shell metric-ribbon" aria-label="Principais resultados da auditoria">
         <div>
-          <strong>188</strong>
+          <strong>243</strong>
           <span>threads do Codex Analytics</span>
         </div>
         <div>
-          <strong>1,214</strong>
+          <strong>1,978</strong>
           <span>turnos do Codex Analytics</span>
         </div>
         <div>
@@ -71,8 +73,8 @@
           <span>desvio confirmado</span>
         </div>
         <div>
-          <strong>1</strong>
-          <span>candidato em revisao</span>
+          <strong><a class="metric-count-link" href="error-log.html">6</a></strong>
+          <span>grupos de problemas registrados</span>
         </div>
         <div>
           <strong class="metric-word">Incompleta</strong>
@@ -94,6 +96,37 @@
         </div>
         <div class="evidence-carousel" data-evidence-carousel tabindex="0" aria-label="Instantaneos semanais de evidencias">
           <div class="evidence-carousel-track">
+            <article id="snapshot-2026-06-10" class="evidence-snapshot-card" data-evidence-card>
+              <div class="snapshot-card-heading">
+                <div>
+                  <span class="snapshot-kicker">Atualizacao de evidencia mais recente</span>
+                  <h3>Periodo encerrado em 10 de junho de 2026</h3>
+                  <p>Medido pelo instantaneo Codex Analytics de 10 de junho de 2026</p>
+                </div>
+                <span class="coverage-badge is-incomplete">Cobertura incompleta</span>
+              </div>
+              <div class="snapshot-metric-grid">
+                <div><strong>243</strong><span>threads</span></div>
+                <div><strong>1,978</strong><span>turnos</span></div>
+                <div><strong>0</strong><span>desvio confirmado</span></div>
+                <div><strong><a class="metric-count-link" href="error-log.html">6</a></strong><span>grupos de problemas registrados</span></div>
+              </div>
+              <div class="snapshot-detail-grid">
+                <div><span>Periodo do Analytics</span><strong>27 de maio a 10 de junho de 2026</strong></div>
+                <div><span>Ritmo de uso</span><strong>Media de 16.2 threads/dia; 131.9 turnos/dia</strong></div>
+                <div><span>Status do candidato</span><strong>1 incidente candidato permanece sem classificacao final</strong></div>
+                <div><span>Rotulos de fonte</span><strong>Captura de tela / arquivo verificado / auditoria registrada</strong></div>
+                <div><span>Corrigidos antes da publicacao</span><strong>Substituicao de classe do wordmark e divergencia de preset de personalizacao</strong></div>
+                <div><span>Defeito adiado</span><strong>Problema do menu mobile da pre-visualizacao gratuita; pagina PT-BR retirada do upload</strong></div>
+                <div><span>Revisao privada do pacote</span><strong>Achados de prontidao de governanca/pacote corrigidos ou mantidos atras de portoes de instalacao</strong></div>
+                <div><span>Problema de identidade publica</span><strong>Avatar incorreto da organizacao identificado; avatar do site adicionado, avatar da organizacao ainda e etapa de conta</strong></div>
+              </div>
+              <p class="snapshot-limitation">
+                Os grupos de problemas registrados sao apenas categorias publicas seguras. Registros privados de incidentes,
+                texto de governanca, listas exatas de arquivos e caminhos locais de fonte permanecem privados. Zeros confirmados
+                nao estabelecem deteccao completa enquanto a cobertura da auditoria estiver incompleta.
+              </p>
+            </article>
             <article id="snapshot-2026-06-04" class="evidence-snapshot-card" data-evidence-card>
               <div class="snapshot-card-heading">
                 <div>
@@ -160,9 +193,10 @@
             <div><dt>Desvio confirmado registrado</dt><dd>0</dd></div>
             <div><dt>Alucinacao confirmada registrada</dt><dd>0</dd></div>
             <div><dt>Incidentes candidatos em revisao</dt><dd>1</dd></div>
+            <div><dt>Grupos de problemas no instantaneo mais recente</dt><dd><a class="metric-count-link" href="error-log.html">6</a></dd></div>
             <div><dt>Acoes nao autorizadas registradas</dt><dd>0</dd></div>
             <div><dt>Contaminacao de projeto registrada</dt><dd>0</dd></div>
-            <div><dt>Eventos registrados de retrabalho corretivo</dt><dd>1</dd></div>
+            <div><dt>Eventos registrados de retrabalho corretivo</dt><dd>6 grupos</dd></div>
             <div><dt>Cobertura da auditoria</dt><dd>Incompleta</dd></div>
           </dl>
         </article>
@@ -331,8 +365,8 @@
         <article class="detail-panel span-two">
           <h2>Como o <span class="title-wordmark"><span class="wordmark-no">No</span><span class="wordmark-drift">Drift</span></span> funciona entre ferramentas de LLM</h2>
           <p>
-            O mesmo metodo NoDrift pode ser adaptado para Codex, Claude Code, Claude, projetos e agentes ChatGPT, workspaces no estilo
-            Gemini, workspaces no estilo DeepSeek e outras ferramentas de LLM quando o ambiente de trabalho oferece suporte a instrucoes
+            O mesmo metodo NoDrift pode ser adaptado para Codex, Anthropic Claude Code, Google Gemini, Antigravity,
+            ChatGPT, Claude, Perplexity e outras ferramentas de IA quando o ambiente de trabalho oferece suporte a instrucoes
             persistentes, arquivos de projeto, referencias ou registros repetiveis de fluxo de trabalho.
           </p>
           <p>
@@ -340,7 +374,7 @@
             de arquivos e a sequencia operacional sao informacoes internas privadas.
           </p>
           <p>
-            Em ambientes no estilo Gemini e DeepSeek, a implementacao muda por plataforma, mas o trabalho de recepcao permanece igual:
+            Em diferentes ambientes de comunicacao com IA, a implementacao muda por plataforma, mas o trabalho de recepcao permanece igual:
             preservar a intencao do usuario, separar fatos verificados de suposicoes, manter decisoes visiveis e parar antes de acoes que precisam de aprovacao.
           </p>
           <p>
