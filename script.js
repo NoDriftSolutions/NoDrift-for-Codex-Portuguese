@@ -1,4 +1,4 @@
-﻿const toast = document.querySelector(".toast");
+const toast = document.querySelector(".toast");
 let toastTimer;
 
 function showPlaceholder(message) {
@@ -12,7 +12,8 @@ function showPlaceholder(message) {
 }
 
 document.querySelectorAll("[data-placeholder]").forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
     showPlaceholder(button.getAttribute("data-placeholder"));
   });
 });
@@ -362,7 +363,7 @@ updateProfileSummary();
           query: "payment price coming soon buy NoDrift Codex",
           answerTitle: "Status atual de pagamento",
           answer:
-            "O pagamento ainda nao esta ativo. NoDrift para Codex v1 esta listado como em breve por US$99, e o site atualmente nao coleta pagamento.",
+            "O pagamento ainda nao esta ativo. NoDrift para Codex v1 tera dois planos no Brasil: Basico por R$195 e Estendido por R$295.",
           links: [
             { page: "Inicio", title: "FAQ", url: "index.html#faq" },
             { page: "Inicio", title: "Visao geral", url: "index.html#top" },
