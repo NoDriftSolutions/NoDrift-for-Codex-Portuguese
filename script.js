@@ -369,6 +369,66 @@ updateProfileSummary();
             { page: "Inicio", title: "Visao geral", url: "index.html#top" },
           ],
         },
+        {
+          key: "what-is-nodrift",
+          label: "O que e NoDrift?",
+          query: "what is NoDrift governed AI workspace Codex",
+          answerTitle: "NoDrift em linguagem simples",
+          answer:
+            "NoDrift e um sistema de workspace governado para trabalho serio com Codex. Ele ajuda a manter contexto, aprovacoes, fontes, limites de evidencia e caminhos de correcao visiveis em projetos longos com IA.",
+          links: [
+            { page: "Inicio", title: "Visao geral", url: "index.html#top" },
+            { page: "Boas praticas", title: "Praticas iniciais", url: "best-practices.html#beginner-heading" },
+          ],
+        },
+        {
+          key: "who-is-it-for",
+          label: "Para quem e?",
+          query: "founders developers consultants agencies researchers operations teams",
+          answerTitle: "Quem o NoDrift ajuda",
+          answer:
+            "NoDrift e para usuarios e equipes que usam Codex em trabalho real, especialmente quando projetos envolvem aprovacoes, publicacao, materiais-fonte, limites de cliente ou decisoes que precisam sobreviver alem de um unico chat.",
+          links: [
+            { page: "Inicio", title: "Para quem serve", url: "index.html#who" },
+            { page: "Inicio", title: "FAQ", url: "index.html#faq" },
+          ],
+        },
+        {
+          key: "replace-codex",
+          label: "Substitui o Codex?",
+          query: "replace Codex extension wrapper reception layer",
+          answerTitle: "NoDrift nao substitui o Codex",
+          answer:
+            "NoDrift nao substitui o Codex nem muda o modelo de IA. Ele adiciona disciplina operacional ao redor do workspace para que usuario e Codex trabalhem com limites, registros e revisao mais claros.",
+          links: [
+            { page: "Evidencias", title: "Camada de recepcao", url: "audit-summary.html" },
+            { page: "Tecnico", title: "Revisao tecnica", url: "technical-info.html" },
+          ],
+        },
+        {
+          key: "voice-images",
+          label: "Posso usar voz e imagens?",
+          query: "voice screenshots images show screen verify tasks",
+          answerTitle: "Use entrada natural e depois verifique",
+          answer:
+            "Sim. Um fluxo NoDrift pode usar voz, capturas de tela, imagens coladas e revisao cuidadosa. A ideia e dar melhor evidencia ao Codex e depois verificar o que mudou antes de confiar no resultado.",
+          links: [
+            { page: "Boas praticas", title: "Praticas iniciais", url: "best-practices.html#beginner-heading" },
+            { page: "Inicio", title: "FAQ", url: "index.html#faq" },
+          ],
+        },
+        {
+          key: "public-safe",
+          label: "O que nao deve ser publico?",
+          query: "do not publish private governance correction records file lists",
+          answerTitle: "Mantenha material privado em privado",
+          answer:
+            "Paginas publicas podem explicar o produto, o problema e evidencias seguras. Elas nao devem expor registros privados de workspace, texto exato de configuracao, prompts diagnosticos, registros de correcao, detalhes de conta ou material operacional exclusivo do comprador.",
+          links: [
+            { page: "Evidencias", title: "Limite de afirmacoes", url: "audit-summary.html" },
+            { page: "Solucao de problemas", title: "Limite publico", url: "troubleshooting.html#triage-heading" },
+          ],
+        },
       ],
     },
     {
@@ -407,6 +467,88 @@ updateProfileSummary();
             "Previa local, estado do repositorio e GitHub Pages ativo sao estados separados. A orientacao de solucao de problemas do comprador explica como verifica-los com seguranca.",
           links: [
             { page: "Solucao de problemas", title: "Publicacao", url: "troubleshooting.html#triage-heading" },
+          ],
+        },
+        {
+          key: "wrong-workspace",
+          label: "Workspace errado?",
+          query: "wrong workspace folder path project files not found",
+          answerTitle: "Confirme primeiro o workspace ativo",
+          answer:
+            "Se o Codex parece estar trabalhando na pasta errada, pare o avanco e confirme o workspace ativo antes de editar. Um workspace errado pode fazer acoes corretas acontecerem no lugar errado.",
+          links: [
+            { page: "Solucao de problemas", title: "Problemas comuns", url: "troubleshooting.html#triage-heading" },
+          ],
+        },
+        {
+          key: "setup-skipped",
+          label: "Uma etapa foi pulada",
+          query: "setup skipped installation order customization first run",
+          answerTitle: "Volte para a ordem de configuracao",
+          answer:
+            "Se uma etapa de configuracao parece ter sido pulada, pause e verifique a sequencia pretendida antes de continuar. NoDrift foi desenhado para ativar as regras do workspace antes do trabalho mais profundo.",
+          links: [
+            { page: "Solucao de problemas", title: "Problemas de configuracao", url: "troubleshooting.html#triage-heading" },
+            { page: "Personalizar", title: "Personalizar", url: "customize.html#workflow-settings-heading" },
+          ],
+        },
+        {
+          key: "overclaims",
+          label: "Codex exagerou uma afirmacao",
+          query: "overclaim complete verified audited evidence too broad",
+          answerTitle: "Limite a afirmacao a evidencia",
+          answer:
+            "Se o Codex disser que algo esta completo, verificado ou pronto, pergunte qual evidencia sustenta exatamente essa afirmacao. NoDrift separa trabalho verificado de resumo que apenas parece plausivel.",
+          links: [
+            { page: "Evidencias", title: "Limite de evidencias", url: "audit-summary.html" },
+            { page: "Boas praticas", title: "Questione afirmacoes", url: "best-practices.html#beginner-heading" },
+          ],
+        },
+        {
+          key: "lost-context",
+          label: "O contexto se perdeu",
+          query: "lost context continuation handoff memory topic map",
+          answerTitle: "Use registros de continuidade",
+          answer:
+            "Quando o contexto falta ou fica fora de ordem, preserve o objetivo atual, decisoes, perguntas abertas, riscos, arquivos e proximas acoes antes de continuar. Nao reconstrua historico ausente por palpite.",
+          links: [
+            { page: "Inicio", title: "Registros de continuidade", url: "index.html#continuity-records" },
+            { page: "Evidencias", title: "Continuidade", url: "audit-summary.html" },
+          ],
+        },
+        {
+          key: "approval-boundary",
+          label: "Quando o Codex deve parar?",
+          query: "approval save publish post push delete move external action",
+          answerTitle: "Pare antes de acoes consequentes",
+          answer:
+            "Codex deve parar antes de salvar, publicar, fazer push, deletar, mover, enviar, configurar ou agir fora do workspace, a menos que o usuario aprove explicitamente aquela acao naquele momento.",
+          links: [
+            { page: "Boas praticas", title: "Habitos de aprovacao", url: "best-practices.html#advanced-heading" },
+            { page: "Solucao de problemas", title: "Limites de aprovacao", url: "troubleshooting.html#triage-heading" },
+          ],
+        },
+        {
+          key: "browser-preview",
+          label: "A previa parece diferente",
+          query: "browser preview cached local stale refresh pages not updated",
+          answerTitle: "Confira o que voce esta vendo",
+          answer:
+            "Uma aba antiga, arquivo local, servidor de previa, repositorio e site ativo podem mostrar estados diferentes. Verifique a URL visivel e o caminho de atualizacao antes de concluir que os arquivos do site estao errados.",
+          links: [
+            { page: "Solucao de problemas", title: "Estado do site", url: "troubleshooting.html#triage-heading" },
+          ],
+        },
+        {
+          key: "private-files",
+          label: "Arquivos privados apareceram",
+          query: "private files exposed public page correction records governance",
+          answerTitle: "Trate risco de exposicao como parada",
+          answer:
+            "Se nomes de arquivos privados, registros de correcao, detalhes de conta ou linguagem exclusiva do comprador aparecerem em material publico, pare e remova ou reescreva antes de publicar qualquer coisa.",
+          links: [
+            { page: "Solucao de problemas", title: "Problemas de privacidade", url: "troubleshooting.html#triage-heading" },
+            { page: "Evidencias", title: "Evidencias publicas seguras", url: "audit-summary.html" },
           ],
         },
       ],
@@ -448,6 +590,90 @@ updateProfileSummary();
           links: [
             { page: "Evidencias", title: "Resumo completo da auditoria", url: "audit-summary.html" },
             { page: "Boas praticas", title: "Afirmacoes amplas", url: "best-practices.html#beginner-heading" },
+          ],
+        },
+        {
+          key: "source-discipline",
+          label: "Disciplina de fontes",
+          query: "source hierarchy files evidence verified references",
+          answerTitle: "As fontes precisam permanecer visiveis",
+          answer:
+            "NoDrift favorece hierarquia de fontes visivel: o que foi lido, o que foi pesquisado, o que foi verificado e o que continua sem verificacao. Isso reduz suposicoes antigas e conclusoes sem suporte.",
+          links: [
+            { page: "Evidencias", title: "Registros de evidencia", url: "audit-summary.html" },
+            { page: "Tecnico", title: "Revisao tecnica", url: "technical-info.html" },
+          ],
+        },
+        {
+          key: "approval-gates",
+          label: "Portoes de aprovacao",
+          query: "approval gates public external file changes user permission",
+          answerTitle: "Aprovacao separa capacidade de permissao",
+          answer:
+            "NoDrift trata capacidade e aprovacao como coisas diferentes. Codex pode conseguir editar, publicar ou fazer push, mas uma acao consequente ainda precisa de aprovacao explicita do usuario.",
+          links: [
+            { page: "Boas praticas", title: "Praticas avancadas", url: "best-practices.html#advanced-heading" },
+            { page: "Solucao de problemas", title: "Limite de aprovacao", url: "troubleshooting.html#triage-heading" },
+          ],
+        },
+        {
+          key: "continuity-records",
+          label: "Registros de continuidade",
+          query: "continuity records handoff topic map decisions open questions",
+          answerTitle: "Continuidade mantem trabalhos longos navegaveis",
+          answer:
+            "Registros de continuidade preservam objetivos, decisoes, perguntas abertas, arquivos, riscos e proximas acoes para que uma futura sessao do Codex nao precise adivinhar o que aconteceu.",
+          links: [
+            { page: "Inicio", title: "Registros de continuidade", url: "index.html#continuity-records" },
+            { page: "Evidencias", title: "Continuidade", url: "audit-summary.html" },
+          ],
+        },
+        {
+          key: "correction-loop",
+          label: "Loop de correcao",
+          query: "correction loop candidate error issue log fix verify",
+          answerTitle: "Correcoes viram parte do sistema",
+          answer:
+            "NoDrift trata suspeitas de erro como coisas a inspecionar, classificar, corrigir e verificar. Material publico pode descrever o loop sem expor registros privados de correcao.",
+          links: [
+            { page: "Inicio", title: "Salvaguardas de correcao", url: "index.html#correction-safeguards" },
+            { page: "Evidencias", title: "Registro de problemas", url: "error-log.html" },
+          ],
+        },
+        {
+          key: "model-boundary",
+          label: "Limite do modelo",
+          query: "does not control model hallucination LLM output reception",
+          answerTitle: "NoDrift governa o trabalho ao redor do modelo",
+          answer:
+            "NoDrift nao garante o comportamento do modelo nem elimina todos os erros. Ele governa como o trabalho recebe, verifica, registra, questiona e age sobre a saida da IA.",
+          links: [
+            { page: "Evidencias", title: "Camada de recepcao", url: "audit-summary.html" },
+            { page: "Tecnico", title: "Revisao tecnica", url: "technical-info.html" },
+          ],
+        },
+        {
+          key: "public-evidence",
+          label: "Evidencia publica",
+          query: "public safe evidence snapshot audit issue categories",
+          answerTitle: "A evidencia publica e propositalmente limitada",
+          answer:
+            "Evidencia publica deve mostrar resumos seguros, limites de revisao e categorias de problemas sem publicar memoria privada de projeto, prompts diagnosticos exatos ou arquivos exclusivos do comprador.",
+          links: [
+            { page: "Evidencias", title: "Resumo de auditoria", url: "audit-summary.html" },
+            { page: "Evidencias", title: "Registro de problemas", url: "error-log.html" },
+          ],
+        },
+        {
+          key: "future-tools",
+          label: "Edicoes para ferramentas futuras",
+          query: "future tools Claude Code Gemini ChatGPT editions adapt",
+          answerTitle: "O metodo pode ir alem do Codex",
+          answer:
+            "NoDrift comeca com Codex, mas a disciplina pode ser adaptada para outros ambientes de LLM e ferramentas de codigo quando instrucoes, referencias, aprovacoes e registros de continuidade podem ser mantidos.",
+          links: [
+            { page: "Evidencias", title: "Entre ferramentas de LLM", url: "audit-summary.html" },
+            { page: "Inicio", title: "FAQ", url: "index.html#faq" },
           ],
         },
       ],
