@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>NoDrift Solutions | Documentação | Registro de correções</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../page.css?v=docs-live-2026-06-16-1" />
+  </head>
+  <body>
+    <header><nav class="nav"><a class="brand" href="../index.html">NoDrift Solutions</a><div class="navlinks"><a href="../overview.html">Fluxo de trabalho</a><a href="index.html?v=docs-2026-06-16-8">Documentação</a><a href="../packages.html">Família de produtos</a><a href="../pricing-us.html">Preços</a><a href="../correction-log.html">Registro de correções</a><a href="../technical-index.html">Evidências</a></div></nav></header>
+    <main class="docs-shell">
+      <aside class="docs-sidebar"><span class="docs-kicker">Documentação</span><a href="index.html?v=docs-2026-06-16-8">Início</a><a href="overview.html?v=docs-2026-06-16-8">Visão geral</a><a href="quickstart.html?v=docs-2026-06-16-8">Primeiros passos</a><a href="core-concepts.html?v=docs-2026-06-16-8">Conceitos centrais</a><a href="workflow.html?v=docs-2026-06-16-8">Fluxo de trabalho</a><a href="system-boundaries.html?v=docs-2026-06-16-8">Limites do sistema</a><a href="customization.html?v=docs-2026-06-16-8">Personalização</a><a href="evidence.html?v=docs-2026-06-16-8">Evidências</a><a class="active" href="correction-log.html?v=docs-2026-06-16-8">Registro de correções</a><a href="technical-review.html?v=docs-2026-06-16-8">Revisão técnica</a><a href="troubleshooting.html?v=docs-2026-06-16-8">Solução de problemas</a><a href="reference.html?v=docs-2026-06-16-8">Referência</a><a href="approval-gates.html?v=docs-2026-06-16-8">Gates de aprovação</a><a href="limitations.html?v=docs-2026-06-16-8">Limitações</a></aside>
+      <article class="docs-content">
+        <section class="docs-hero"><span>Correção</span><h1>Registro de correções</h1><p>Registros de correção podem mostrar categorias de problemas seguras para público, status, limites e caminhos de correção sem expor detalhes privados de incidentes.</p></section>
+        <section class="correction-log-table" aria-label="Status do registro de correções">
+          <div class="correction-row header"><span>Problema Class</span><span>Status</span><span>Caminho de correção seguro para público</span></div>
+          <div class="correction-row"><span>Candidate Incident</span><strong>Em revisão</strong><p>Manter rotulado até que a evidência sustente uma classificação final.</p></div>
+          <div class="correction-row"><span>Wordmark Class Defect</span><strong>Corrigido</strong><p>Restaurar o nome da classe técnica, escanear resíduos e verificar o resultado renderizado.</p></div>
+          <div class="correction-row"><span>Personalização Mismatch</span><strong>Corrigido</strong><p>Alinhar rótulos visíveis com valores internos e confirmar a atualização das configurações agrupadas.</p></div>
+          <div class="correction-row"><span>Preview Menu Defect</span><strong>Deferred</strong><p>Manter fora do upload até que marcação e testes correspondam à lógica compartilhada do site.</p></div>
+          <div class="correction-row"><span>Prontidão do pacote</span><strong>Gated</strong><p>Manter alegações mais fortes de instalação, entrega e uso público atrás de aprovação.</p></div>
+          <div class="correction-row"><span>Identity Mismatch</span><strong>Separated</strong><p>Keep account-level identity changes separate from website repository changes.</p></div>
+        </section>
+        <section class="docs-list"><article><h2>Candidate Incident Em revisão</h2><p>Um incidente candidato permanece visível enquanto sua classificação final não tem suporte. Ele não é contado como drift confirmado nem alucinação confirmada a menos que a revisão de evidências sustente essa classificação.</p></article><article><h2>Wordmark Class Replacement Defect</h2><p>Uma substituição ampla de texto alterou temporariamente uma classe CSS usada pela marca NoDrift. O caminho de correção foi restaurar o nome da classe técnica, escanear resíduos e verificar o resultado renderizado.</p></article><article><h2>Personalização Preset Mismatch</h2><p>Um fluxo de personalização traduzido inicialmente não atualizou todas as configurações agrupadas porque rótulos visíveis e valores internos de dados já não coincidiam. O caminho de correção foi alinhamento mais verificação no navegador.</p></article><article><h2>Free Preview Mobile Menu Defect</h2><p>Uma página PT-BR de prévia gratuita usava um padrão de menu móvel diferente do cabeçalho compartilhado, então permaneceu adiada para upload até que a marcação e o caminho de teste coincidissem com a lógica compartilhada do site.</p></article><article><h2>Achados de governança e prontidão do pacote</h2><p>A revisão privada do pacote encontrou lacunas de prontidão que impediam alegações mais fortes de instalação ou uso público. O caminho de correção foi corrigir itens aprovados de forma privada e manter o restante atrás de gates.</p></article><article><h2>Organization Avatar Mismatch</h2><p>O repositório do site não continha a imagem errada; a incompatibilidade estava no nível do perfil da organização. O avatar do site foi corrigido enquanto a mudança no nível da conta permaneceu uma ação separada.</p></article></section>
+        <section class="docs-note"><h2>Protected Detail</h2><p>Grupos de problemas seguros para público podem nomear causa, status e caminho de correção. Transcrições privadas de incidentes, pastas locais de evidências, arquivos internos exatos de causa e lições corretivas privadas permanecem fora da documentação pública.</p></section>
+        <section class="docs-section"><div class="docs-link-row"><a href="evidence.html?v=docs-2026-06-16-8">Evidências</a><a href="technical-review.html?v=docs-2026-06-16-8">Revisão técnica</a><a href="troubleshooting.html?v=docs-2026-06-16-8">Solução de problemas</a><a href="../correction-log.html">Main Correção Page</a></div></section>
+      </article>
+    </main>
+    <footer><span>NoDrift Solutions</span><a href="../index.html">Início</a></footer>
+  </body>
+</html>
+

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>NoDrift Solutions | Documentação | Limites do sistema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../page.css?v=surface-2026-06-16-2" />
+  </head>
+  <body>
+    <header><nav class="nav"><a class="brand" href="../index.html">NoDrift Solutions</a><div class="navlinks"><a href="../overview.html">Fluxo de trabalho</a><a href="index.html?v=docs-2026-06-16-8">Documentação</a><a href="../packages.html">Família de produtos</a><a href="../pricing-us.html">Preços</a><a href="../correction-log.html">Registro de correções</a><a href="../technical-index.html">Evidências</a></div></nav></header>
+    <main class="docs-shell">
+      <aside class="docs-sidebar"><span class="docs-kicker">Documentação</span><a href="index.html?v=docs-2026-06-16-8">Início</a><a href="overview.html?v=docs-2026-06-16-8">Visão geral</a><a href="quickstart.html?v=docs-2026-06-16-8">Primeiros passos</a><a href="core-concepts.html?v=docs-2026-06-16-8">Conceitos centrais</a><a href="workflow.html?v=docs-2026-06-16-8">Fluxo de trabalho</a><a class="active" href="system-boundaries.html?v=docs-2026-06-16-8">Limites do sistema</a><a href="customization.html?v=docs-2026-06-16-8">Personalização</a><a href="evidence.html?v=docs-2026-06-16-8">Evidências</a><a href="correction-log.html?v=docs-2026-06-16-8">Registro de correções</a><a href="technical-review.html?v=docs-2026-06-16-8">Revisão técnica</a><a href="troubleshooting.html?v=docs-2026-06-16-8">Solução de problemas</a><a href="reference.html?v=docs-2026-06-16-8">Referência</a><a href="approval-gates.html?v=docs-2026-06-16-8">Gates de aprovação</a><a href="limitations.html?v=docs-2026-06-16-8">Limitações</a></aside>
+      <article class="docs-content">
+        <section class="docs-hero"><span>Limites</span><h1>Limites do sistema</h1><p>NoDrift governa a sessão de trabalho. Ele não controla o modelo e é apenas uma camada do ambiente operacional completo.</p></section>
+        <section class="docs-section"><h2>Governança do lado da recepção</h2><p>NoDrift não muda o LLM nem garante que toda resposta seja verdadeira. Seu papel é governar a recepção: o que a sessão de trabalho aceita, checa, registra, corrige, rejeita ou usa como ação depois que a saída chega.</p></section>
+        <section class="docs-section"><h2>Not Hidden Monitoring Software</h2><p>NoDrift não é software de vigilância oculto, dashboard, monitor de arquivos, avaliador offline, sistema RAG local, cache de simulação, simulador nem visualizador de diff. Ele funciona por meio de materiais protegidos do espaço de trabalho usados dentro do espaço de trabalho ativo do projeto.</p></section>
+        <section class="docs-section"><h2>Not Outgoing Attachment Logic</h2><p>NoDrift não anexa seus arquivos protegidos do espaço de trabalho a mensagens ou turnos enviados. Os materiais protegidos ficam no espaço de trabalho e orientam o que a sessão ativa checa antes que alegações sensíveis ou ações avancem.</p></section>
+        <section class="docs-section"><h2>Decision Points Matter</h2><p>Os controles são aplicados em pontos de decisão: quando uma tarefa começa, antes que arquivos sejam inspecionados, antes que uma alegação factual seja feita, antes de edições, antes de reutilizar contexto antigo, antes de ação externa e depois que o trabalho termina para verificação.</p></section>
+        <section class="docs-section"><div class="docs-link-row"><a href="technical-review.html?v=docs-2026-06-16-8">Revisão técnica</a><a href="approval-gates.html?v=docs-2026-06-16-8">Gates de aprovação</a><a href="limitations.html?v=docs-2026-06-16-8">Limitações</a></div></section>
+      </article>
+    </main>
+    <footer><span>NoDrift Solutions</span><a href="../index.html">Início</a></footer>
+  </body>
+</html>
+

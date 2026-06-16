@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>NoDrift Solutions | Documentação | Gates de aprovação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../page.css?v=surface-2026-06-16-2" />
+  </head>
+  <body>
+    <header><nav class="nav"><a class="brand" href="../index.html">NoDrift Solutions</a><div class="navlinks"><a href="../overview.html">Fluxo de trabalho</a><a href="index.html?v=docs-2026-06-16-8">Documentação</a><a href="../packages.html">Família de produtos</a><a href="../pricing-us.html">Preços</a><a href="../correction-log.html">Registro de correções</a><a href="../technical-index.html">Evidências</a></div></nav></header>
+    <main class="docs-shell">
+      <aside class="docs-sidebar"><span class="docs-kicker">Documentação</span><a href="index.html?v=docs-2026-06-16-8">Início</a><a href="overview.html?v=docs-2026-06-16-8">Visão geral</a><a href="quickstart.html?v=docs-2026-06-16-8">Primeiros passos</a><a href="core-concepts.html?v=docs-2026-06-16-8">Conceitos centrais</a><a href="workflow.html?v=docs-2026-06-16-8">Fluxo de trabalho</a><a href="system-boundaries.html?v=docs-2026-06-16-8">Limites do sistema</a><a href="customization.html?v=docs-2026-06-16-8">Personalização</a><a href="evidence.html?v=docs-2026-06-16-8">Evidências</a><a href="correction-log.html?v=docs-2026-06-16-8">Registro de correções</a><a href="technical-review.html?v=docs-2026-06-16-8">Revisão técnica</a><a href="troubleshooting.html?v=docs-2026-06-16-8">Solução de problemas</a><a href="reference.html?v=docs-2026-06-16-8">Referência</a><a class="active" href="approval-gates.html?v=docs-2026-06-16-8">Gates de aprovação</a><a href="limitations.html?v=docs-2026-06-16-8">Limitações</a></aside>
+      <article class="docs-content">
+        <section class="docs-hero"><span>Aprovação</span><h1>Gates de aprovação</h1><p>Ações consequentes ainda precisam de aprovação explícita, mesmo quando o próximo passo parece óbvio.</p></section>
+        <section class="docs-section"><h2>One Clear Próximo Directive</h2><p>O Orquestrador de IA deve encerrar turnos substantivos com uma próxima diretiva clara escrita para o usuário. O usuário então aprova ou retém aprovação para essa diretiva. No método operacional atual, a palavra de aprovação é <code>go</code>.</p></section>
+        <section class="docs-section"><h2>A aprovação se aplica à tarefa aprovada</h2><p>Quando nenhum <code>/goal</code> governa a execução, a aprovação se aplica apenas à diretiva recém-aprovada, incluindo seus parâmetros declarados, e não a toda ação adjacente possível.</p></section>
+        <section class="docs-section"><h2>Goal-Governed Runs</h2><p>Quando um <code>/goal</code> governa a execução, <code>go</code> pode autorizar a sequência limitada de tarefas definida por esse objetivo, em vez de apenas um próximo passo isolado. A aprovação ainda permanece dentro do escopo declarado do objetivo e não se estende automaticamente além dele.</p></section>
+        <section class="docs-section"><h2>Edições, regeneração e mudanças destrutivas</h2><p>Edições, etapas de build ou regeneração, exclusões, sobrescritas, restaurações, movimentos e outras mudanças que podem reescrever o instantâneo ou outra superfície de trabalho não devem ser inferidas a partir de um pedido geral de ajuda.</p></section>
+        <section class="docs-section"><h2>External Actions</h2><p>Publicar, enviar ao repositório, fazer upload, compartilhar, implantar, enviar ou usar contas externas são momentos separados de aprovação, mesmo quando o espaço de trabalho já tem acesso.</p></section>
+        <section class="docs-section"><h2>Alegações amplas precisam de cobertura</h2><p>Alegações como todas as páginas, todos os arquivos, completo, pronto, verificado ou seguro para público exigem evidência mostrando o que foi realmente checado. Um resumo que soa limpo não basta por si só.</p></section>
+        <section class="docs-note"><h2>Access Is Not Aprovação</h2><p>Prévia local não é publicação, acesso ao repositório não é permissão para push, e arquivos visíveis não são automaticamente seguros para público. Termos comerciais, linguagem de prontidão de suporte, partes internas do pacote e disponibilidade de ferramentas futuras também exigem redação exata aprovada antes de virarem alegações do site.</p></section>
+        <section class="docs-section"><div class="docs-link-row"><a href="limitations.html?v=docs-2026-06-16-8">Limitações</a><a href="troubleshooting.html?v=docs-2026-06-16-8">Solução de problemas</a><a href="../contact.html">Contato</a></div></section>
+      </article>
+    </main>
+    <footer><span>NoDrift Solutions</span><a href="../index.html">Início</a></footer>
+  </body>
+</html>
+
